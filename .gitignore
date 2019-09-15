@@ -1,0 +1,8 @@
+target/
+bungeecordrest.properties
+bungeecordrest.iml
+bungeecordrest.xml
+module_bungeecord-rest.xml
+module_bungeecordrest.xml
+.idea/
+dependency-reduced-pom.xml

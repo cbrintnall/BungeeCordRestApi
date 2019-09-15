@@ -1,0 +1,4 @@
+name: Rest
+main: com.arctaeon.restplugin.RestPlugin
+version: 0.1
+author: Arctaeon
