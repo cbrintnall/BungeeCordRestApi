@@ -6,3 +6,4 @@ module_bungeecord-rest.xml
 module_bungeecordrest.xml
 .idea/
 dependency-reduced-pom.xml
+*.swp

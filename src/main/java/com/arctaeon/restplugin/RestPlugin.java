@@ -8,12 +8,9 @@ import java.util.logging.Logger;
 public class RestPlugin extends Plugin {
     private Thread restThread;
 
-    // TODO: Need to disable the thread on disable
-
     @Override
     public void onEnable() {
-        this.restThread = new Thread(new PluginThread(this, getLogger()));
-        this.restThread.start();
+        getProxy().getScheduler().runAsync(this, new PluginThread(this, getLogger()));
     }
 
     @Override
