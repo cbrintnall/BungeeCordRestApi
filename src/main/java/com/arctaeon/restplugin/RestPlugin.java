@@ -6,16 +6,9 @@ import net.md_5.bungee.api.plugin.Plugin;
 import java.util.logging.Logger;
 
 public class RestPlugin extends Plugin {
-    private Thread restThread;
-
     @Override
     public void onEnable() {
         getProxy().getScheduler().runAsync(this, new PluginThread(this, getLogger()));
-    }
-
-    @Override
-    public void onDisable() {
-        this.restThread.stop();
     }
 }
 
